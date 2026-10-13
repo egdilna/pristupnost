@@ -1,43 +1,1032 @@
 {
   "version": 1,
-  "projectName": "",
-  "projectDescription": "",
+  "projectName": "KB přístupnost",
+  "projectDescription": "Znalostní báze",
   "ghPath": "egdilna/pristupnost/kb-pristupnost.dkmdata",
   "settings": {
     "tabs": [
       {
-        "id": "z_mv6mpclm0b1az1",
+        "id": "z_mv6n2vw9rvnnfq",
+        "kind": "new",
+        "name": "",
+        "icon": "",
+        "showCount": true,
+        "hideEmpty": false,
+        "typeId": "ty_mv6n0q3twhmtld",
+        "modulId": "mod_mv6n27ct8gm4lm"
+      },
+      {
+        "id": "z_mv6n3wvc9ueowe",
         "kind": "inbox",
         "name": "",
         "icon": "",
         "showCount": true,
-        "hideEmpty": false
-      },
-      {
-        "id": "z_mv6mpclmk612xs",
-        "kind": "all",
-        "name": "",
-        "icon": "",
-        "showCount": true,
-        "hideEmpty": false
-      },
-      {
-        "id": "z_mv6mpclm869fct",
-        "kind": "archive",
-        "name": "",
-        "icon": "",
-        "showCount": true,
-        "hideEmpty": true
+        "hideEmpty": false,
+        "modulId": "mod_mv6n27ct8gm4lm"
       }
     ],
-    "modules": []
+    "modules": [
+      {
+        "id": "mod_mv6n1loytdvi5c",
+        "name": "Obsah",
+        "icon": ""
+      },
+      {
+        "id": "mod_mv6n27ct8gm4lm",
+        "name": "",
+        "icon": "Správa"
+      }
+    ]
   },
-  "entityTypes": [],
-  "aspects": [],
-  "relationTypes": [],
-  "selectLists": [],
-  "tagSets": [],
+  "entityTypes": [
+    {
+      "id": "ty_mv6n0q3twhmtld",
+      "name": "Práce",
+      "icon": "🔨",
+      "attributes": [
+        {
+          "id": "a_mv6nfahejnvpro",
+          "name": "Co udělat",
+          "type": "text"
+        },
+        {
+          "id": "a_mv6n0q3tqecs3u",
+          "name": "Druh",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3shpgwao",
+          "showInList": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t9h50we",
+          "name": "Obsah",
+          "type": "textarea",
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t9lffhv",
+          "name": "Stav hlavní",
+          "type": "select",
+          "listId": "l_mv6n0q3s3umm8o",
+          "showInList": true,
+          "highlight": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t8hm9b4",
+          "name": "Zadání",
+          "type": "textarea",
+          "showInList": true,
+          "copyable": true,
+          "highlight": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6nkwbxg9euo8",
+          "name": "Checklist",
+          "type": "checklist"
+        },
+        {
+          "id": "a_mv6n0q3tlqtpqr",
+          "name": "Výsledek práce",
+          "type": "textarea",
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6ne83yrfyzem",
+          "name": "Označení práce",
+          "type": "composed",
+          "template": "((stav hlavní)) ((co udělat))"
+        }
+      ],
+      "nazevZe": "a_mv6ne83yrfyzem"
+    },
+    {
+      "id": "ty_mv6n0q3t85q770",
+      "name": "Informace",
+      "icon": "ℹ️",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3tsn6ge2",
+          "name": "ze šablony",
+          "type": "yesno"
+        },
+        {
+          "id": "a_mv6n0q3tq329uj",
+          "name": "exportovat do architektury",
+          "type": "yesno"
+        },
+        {
+          "id": "a_mv6n0q3thfxgvz",
+          "name": "Obsah",
+          "type": "textarea"
+        },
+        {
+          "id": "a_mv6n0q3trins8b",
+          "name": "Aktualizováno",
+          "type": "date"
+        },
+        {
+          "id": "a_mv6n0q3t5ivhb3",
+          "name": "Autoři",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3s9edqah"
+        }
+      ],
+      "sablonaDetailu": "((autoři)), ((aktualizováno))\n\n((obsah))\n\n\n\n\n"
+    },
+    {
+      "id": "ty_mv6n0q3t6j0ezd",
+      "name": "Zdroj",
+      "icon": "🔺",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3t6rxkyq",
+          "name": "Druh",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3s9zw1y9"
+        },
+        {
+          "id": "a_mv6n0q3tc01hhy",
+          "name": "Obsah",
+          "type": "textarea"
+        },
+        {
+          "id": "a_mv6n0q3t5hwu4j",
+          "name": "Odkaz",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3te9cnbm",
+      "name": "Aktivita",
+      "icon": "",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3twm51hv",
+          "name": "Stav celkově",
+          "type": "select",
+          "listId": "l_mv6n0q3s3umm8o"
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3tqbwsxi",
+      "name": "Právní předpis",
+      "icon": "§",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3toslrbu",
+          "name": "Oficiální název",
+          "type": "composed",
+          "template": "((typ předpisu)) č. ((označení předpisu)) ((sbírka)), ((název předpisu))",
+          "showInList": true,
+          "copyable": true,
+          "highlight": true
+        },
+        {
+          "id": "a_mv6n0q3tmgu9rm",
+          "name": "Zobrazit",
+          "type": "composed",
+          "template": "[((typ předpisu)) č. ((označení předpisu)) ((sbírka)), ((název předpisu))](((odkaz)))",
+          "copyable": true,
+          "highlight": true
+        },
+        {
+          "id": "a_mv6n0q3t0pjeuo",
+          "name": "Označení předpisu",
+          "type": "text",
+          "hidden": true
+        },
+        {
+          "id": "a_mv6n0q3t2vgdci",
+          "name": "Typ předpisu",
+          "type": "select",
+          "listId": "l_mv6n0q3sy9f9i2",
+          "required": true,
+          "showInList": false,
+          "hidden": true
+        },
+        {
+          "id": "a_mv6n0q3td0rgg3",
+          "name": "Sbírka",
+          "type": "select",
+          "listId": "l_mv6n0q3susibrt",
+          "hidden": true
+        },
+        {
+          "id": "a_mv6n0q3twusp6m",
+          "name": "Název předpisu",
+          "type": "text",
+          "copyable": true
+        },
+        {
+          "id": "a_mv6n0q3t9l4vqu",
+          "name": "Odkaz",
+          "type": "url",
+          "copyable": true
+        },
+        {
+          "id": "a_mv6n0q3tn0x5x2",
+          "name": "Stručný popis",
+          "type": "text",
+          "copyable": true,
+          "hideEmpty": true,
+          "showInList": true,
+          "highlight": true
+        },
+        {
+          "id": "a_mv6n0q3tm9wi5i",
+          "name": "Podrobnější popis",
+          "type": "textarea",
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t6s8brf",
+          "name": "Odkaz e-Sbírka",
+          "type": "url"
+        },
+        {
+          "id": "a_mv6n0q3thzbcvu",
+          "name": "ELI",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3thzggi4",
+      "name": "Věci k řešení",
+      "icon": "❓",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3tkoy79c",
+          "name": "Shrnutí co vyřešit nebo zjistit",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3tkcttsm",
+      "name": "Nástěnka",
+      "icon": "📌",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3tdydew9",
+          "name": "Popis a poznámky",
+          "type": "textarea",
+          "showInList": false,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tu4qd81",
+          "name": "Extra připíchnuté",
+          "type": "relation",
+          "multi": true,
+          "targetType": "any"
+        },
+        {
+          "id": "a_mv6n0q3t9q0h8s",
+          "name": "Použití nástěnky",
+          "type": "composed",
+          "template": "1. Do sekce **Extra připíchnuté** si můžete připojit libovolnou entitu v této aplikaci\n2. Na nástěnku si můžete připíchnout i vazbou a to **na nástěnce** z jakékoliv entity"
+        }
+      ],
+      "jsonKey": "dashboard"
+    },
+    {
+      "id": "ty_mv6n0q3t56jbt5",
+      "name": "Prompt",
+      "icon": "🤖",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3tpyy7sh",
+          "name": "Popis",
+          "type": "text",
+          "showInList": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tv9gwhd",
+          "name": "Text promptu",
+          "type": "text",
+          "copyable": true,
+          "highlight": true
+        },
+        {
+          "id": "a_mv6n0q3tnx13q5",
+          "name": "Další informace",
+          "type": "textarea",
+          "copyable": true,
+          "hideEmpty": true,
+          "jsonKey": "poznamky_k_pouziti"
+        },
+        {
+          "id": "a_mv6n0q3tjvemcy",
+          "name": "",
+          "type": "textarea",
+          "hideEmpty": true
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3t34kz66",
+      "name": "Organizace a osoby",
+      "icon": "",
+      "attributes": []
+    },
+    {
+      "id": "ty_mv6n0q3t6g1tbz",
+      "name": "Požadavek",
+      "icon": "",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3tfo63rh",
+          "name": "Formální popis",
+          "type": "text",
+          "required": true,
+          "showInList": true,
+          "copyable": true
+        },
+        {
+          "id": "a_mv6n0q3tg1577a",
+          "name": "Podrobnější popis",
+          "type": "textarea",
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3ti62zg4",
+          "name": "Typ požadavku",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3srfht5c",
+          "required": true,
+          "showInList": true
+        },
+        {
+          "id": "a_mv6n0q3t7nnd56",
+          "name": "Oblasti architektury",
+          "type": "tags",
+          "showInList": true,
+          "hideEmpty": true,
+          "tagSetId": "ts_mv6n0q3ssp2pse"
+        },
+        {
+          "id": "a_mv6n0q3tz8j504",
+          "name": "Nadřazený požadavek",
+          "type": "relation",
+          "targetType": "ty_mv6n0q3t6g1tbz",
+          "multi": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tutyjwa",
+          "name": "Možnost prověření",
+          "type": "textarea",
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tnepta2",
+          "name": "Vhodný do zadávací dokumentace?",
+          "type": "yesno",
+          "hideEmpty": true
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3t4isimf",
+      "name": "Podklad",
+      "icon": "📖",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3txy8pt2",
+          "name": "Druh",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3swnwofl"
+        },
+        {
+          "id": "a_mv6n0q3t4b1j9i",
+          "name": "Popis",
+          "type": "text",
+          "showInList": true,
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tchjaju",
+          "name": "vydal",
+          "type": "relation",
+          "targetType": "ty_mv6n0q3t34kz66",
+          "multi": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tv6gqhe",
+          "name": "Odkaz",
+          "type": "url",
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t975iwq",
+          "name": "Obsah",
+          "type": "textarea",
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t4csf3l",
+          "name": "Oblasti",
+          "type": "tags",
+          "required": false,
+          "showInList": true,
+          "hideEmpty": true,
+          "tagSetId": "ts_mv6n0q3ssp2pse"
+        },
+        {
+          "id": "a_mv6n0q3tlehh52",
+          "name": "Další informace",
+          "type": "textarea",
+          "hideEmpty": true
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3t520d4z",
+      "name": "Princip",
+      "icon": "",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3t1l0uve",
+          "name": "Popis",
+          "type": "text",
+          "required": true,
+          "copyable": true
+        },
+        {
+          "id": "a_mv6n0q3tjdm5ou",
+          "name": "Rozvedení v praxi",
+          "type": "textarea",
+          "required": false,
+          "showInList": false,
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tuo5gos",
+          "name": "Rámec",
+          "type": "relation",
+          "required": true,
+          "showInList": true,
+          "targetType": "any"
+        },
+        {
+          "id": "a_mv6n0q3t7bb5ru",
+          "name": "Kód",
+          "type": "text",
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3t71242j",
+          "name": "Oblasti architektury",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3snctxpv",
+          "showInList": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3tfpic1x",
+          "name": "Stav schválení",
+          "type": "select",
+          "listId": "l_mv6n0q3shtpjcm",
+          "showInList": true,
+          "hideEmpty": true
+        }
+      ]
+    },
+    {
+      "id": "ty_mv6n0q3tbtm24v",
+      "name": "Režie",
+      "icon": "🪜",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3t0eqv6q",
+          "name": "Stav",
+          "type": "select",
+          "tagSetId": "ts_mv6n0q3so546jd",
+          "listId": "l_mv6n0q3s3umm8o"
+        },
+        {
+          "id": "a_mv6n0q3tnwn9lu",
+          "name": "Zpracování",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3so546jd"
+        },
+        {
+          "id": "a_mv6n0q3tayg89u",
+          "name": "Kdo",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3s9edqah"
+        },
+        {
+          "id": "a_mv6n0q3trghu2l",
+          "name": "Podrobnosti",
+          "type": "textarea"
+        }
+      ],
+      "sablonaDetailu": "ℹ️ Typ Režie je jen interní pro potřeby zpracovatelů a administrátorů a fakticky rozšiřuje správu interních úkolů pro obsah aplikace.\n\n🔨 ((zpracování))\n\n👤 ((kdo))\n\nStav: ((stav))\n\n((zadání))\n\n((podrobnosti))\n\n```dkm:aspects\nheading: 4\n```"
+    },
+    {
+      "id": "t_mv6n5ufqj0x79k",
+      "name": "Věcná oblast",
+      "icon": "",
+      "attributes": [
+        {
+          "id": "a_mv6n6zwouekfac",
+          "name": "Popis",
+          "type": "text"
+        },
+        {
+          "id": "a_mv6n78ffrxgtck",
+          "name": "Podrobnější popis oblasti",
+          "type": "textarea"
+        }
+      ]
+    }
+  ],
+  "aspects": [
+    {
+      "id": "asp_mv6n0q3uxersjl",
+      "name": "K řešení",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3uhx8ft3",
+          "name": "Co vyřešit",
+          "type": "textarea"
+        },
+        {
+          "id": "a_mv6n0q3uh0xhb9",
+          "name": "Výsledek",
+          "type": "textarea"
+        },
+        {
+          "id": "a_mv6n0q3u87bbyi",
+          "name": "Poznámky",
+          "type": "textarea"
+        },
+        {
+          "id": "a_mv6n0q3u4hrev8",
+          "name": "Vyřešeno?",
+          "type": "yesno"
+        },
+        {
+          "id": "a_mv6n0q3ugbzifc",
+          "name": "Zapracováno?",
+          "type": "yesno"
+        },
+        {
+          "id": "a_mv6n0q3u8tm0pj",
+          "name": "Kdo to má na hrbu?",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3s9edqah"
+        },
+        {
+          "id": "a_mv6n0q3uj98m2p",
+          "name": "Příznaky pro řešení",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3sn9upwk"
+        }
+      ],
+      "sablonaDetailu": "**Co vyřešit?**\n\n((co vyřešit))\n\n```dkm:attributes\nonly: Kdo to má na hrbu?, Příznaky pro řešení, Poznámky, Výsledek, Vyřešeno?, Zapracováno?\n```"
+    },
+    {
+      "id": "asp_mv6n0q3u2e2wd5",
+      "name": "Interní poznámky",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3usuha9e",
+          "name": "Poznámky",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "id": "asp_mv6n0q3u6ags3x",
+      "name": "Pochází ze šablony",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3usscn6e",
+          "name": "jaké šablony",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3sn9upwk"
+        },
+        {
+          "id": "a_mv6n0q3urgb2t3",
+          "name": "Poznámky ze šablony",
+          "type": "text",
+          "hideEmpty": true
+        }
+      ]
+    },
+    {
+      "id": "asp_mv6n0q3uf38eg5",
+      "name": "Tagísci",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3u0vguzu",
+          "name": "Tagy",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3sulfy5f"
+        }
+      ]
+    },
+    {
+      "id": "asp_mv6n0q3uocf6zu",
+      "name": "Řeší",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3uduj862",
+          "name": "Kdo",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3s9edqah",
+          "showInList": true,
+          "hideEmpty": true,
+          "highlight": true
+        },
+        {
+          "id": "a_mv6n0q3u89bvgx",
+          "name": "Zpracování",
+          "type": "tags",
+          "tagSetId": "ts_mv6n0q3so546jd"
+        },
+        {
+          "id": "a_mv6n0q3u2niq6q",
+          "name": "Pokyny",
+          "type": "textarea",
+          "showInList": true,
+          "copyable": true,
+          "hideEmpty": true
+        },
+        {
+          "id": "a_mv6n0q3uoik382",
+          "name": "Stav řešení",
+          "type": "select",
+          "listId": "l_mv6n0q3s3umm8o"
+        }
+      ],
+      "sablonaDetailu": "> **((stav řešení))** / ((zpracování)) / 👤 ((kdo))\n\n((pokyny))"
+    },
+    {
+      "id": "asp_mv6n0q3uiy3556",
+      "name": "v aktivitě / projektu",
+      "attributes": [
+        {
+          "id": "a_mv6n0q3uy09lt0",
+          "name": "Aktivity",
+          "type": "relation",
+          "targetType": "ty_mv6n0q3te9cnbm",
+          "multi": true
+        }
+      ],
+      "sablonaDetailu": "v aktivitě/projektu ((aktivity))"
+    }
+  ],
+  "relationTypes": [
+    {
+      "id": "rt_mv6n0q3s457szo",
+      "name": "to samé jako",
+      "inverseName": "to samé jako",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    },
+    {
+      "id": "rt_mv6n0q3s7qy1ny",
+      "name": "souvisí s",
+      "inverseName": "souvisí s",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    },
+    {
+      "id": "rt_mv6n0q3spzlxz0",
+      "name": "specializace od",
+      "inverseName": "má specializaci",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    },
+    {
+      "id": "rt_mv6n0q3sdx5z3q",
+      "name": "reprezentuje",
+      "inverseName": "reprezentující",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    },
+    {
+      "id": "rt_mv6n0q3sb9qwz5",
+      "name": "má vazbu na",
+      "inverseName": "má vazbu z",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    },
+    {
+      "id": "rt_mv6n0q3smej4f5",
+      "name": "dořešit",
+      "inverseName": "v rámci řešení",
+      "scope": "to",
+      "fromTypes": [],
+      "toTypes": [
+        "ty_mv6n0q3thzggi4"
+      ]
+    },
+    {
+      "id": "rt_mv6n0q3s5aa9ao",
+      "name": "realizuje",
+      "inverseName": "má realizaci v",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    },
+    {
+      "id": "rt_mv6n0q3sajd7b1",
+      "name": "je blokováno",
+      "inverseName": "blokuje",
+      "scope": "universal",
+      "fromTypes": [],
+      "toTypes": []
+    }
+  ],
+  "selectLists": [
+    {
+      "id": "l_mv6n0q3s3umm8o",
+      "name": "Stavy úkolů",
+      "values": [
+        "Aktivní",
+        "Budoucí",
+        "Nezahájeno",
+        "Přerušeno",
+        "Uzavřeno",
+        "Zrušeno"
+      ]
+    },
+    {
+      "id": "l_mv6n0q3sy9f9i2",
+      "name": "Typy právního předpisu",
+      "values": [
+        "Zákon",
+        "Vyhláška",
+        "Nařízení vlády",
+        "Nařízení EU",
+        "Směrnice EU",
+        "Předpis"
+      ]
+    },
+    {
+      "id": "l_mv6n0q3susibrt",
+      "name": "Sbírka právního předpisu",
+      "values": [
+        "Sb.",
+        "Sb.m.s.",
+        "EU"
+      ]
+    },
+    {
+      "id": "l_mv6n0q3shtpjcm",
+      "name": "Stav schválení",
+      "values": [
+        "Nápad",
+        "Příprava",
+        "Rozpracované",
+        "Návrh",
+        "K jednání",
+        "Projednávané",
+        "Ke schválení",
+        "Schváleno",
+        "Neschváleno",
+        "Vráceno",
+        "Upravováno",
+        "Aktualizováno",
+        "Pozastaveno",
+        "Zrušeno",
+        "Platné",
+        "Neplatné",
+        "Historické",
+        "Obsoletní",
+        "Nahrazenon"
+      ]
+    },
+    {
+      "id": "l_mv6n0q3shigjzl",
+      "name": "Stav záznamu",
+      "values": [
+        "Námět",
+        "Rozpracované",
+        "Ke korektuře",
+        "Připravené",
+        "Přepracovávané",
+        "Ke schválení",
+        "Schváleno",
+        "Neschváleno",
+        "Přerušeno",
+        "Zrušeno"
+      ]
+    }
+  ],
+  "tagSets": [
+    {
+      "id": "ts_mv6n0q3s9edqah",
+      "name": "Uživatelé",
+      "tags": [
+        "aktualizační robot",
+        "AI",
+        "Michal Rada",
+        "Vladimír Dvořák"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3sn9upwk",
+      "name": "Šablony pro pochází ze šablony",
+      "tags": [
+        "šablona DKM Modelování dat ISVS",
+        "balíček DKM Číselníky VS",
+        "šablona DKM Správa dat úřadu",
+        "šablona DKM Architektonický bonzblok úřadu",
+        "balíček DKM Číselníky VS, šablona DKM Modelování dat ISVS, šablona DKM, Správa dat úřadu",
+        "šablona DKM IK OVS a znalosti DŘ"
+      ],
+      "uzavrena": true
+    },
+    {
+      "id": "ts_mv6n0q3sulfy5f",
+      "name": "Obecné tagy",
+      "tags": [
+        "aktuální",
+        "domyslet",
+        "dopsat",
+        "tohle bude průser",
+        "vyřešeno",
+        "hotovo",
+        "uzavřeno",
+        "dohodnout s VSČR",
+        "probrat s týmem",
+        "vyŕešeno",
+        "uzavŕeno",
+        "do utajované části dokumentace",
+        "neveřrjné a nezveřejnitelné",
+        "prezentovat VSČR"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3s5n7ia5",
+      "name": "Ikonky",
+      "tags": [
+        "✏️",
+        "🖌️",
+        "☑️",
+        "❗️",
+        "🧠",
+        "❓"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3so546jd",
+      "name": "Zpracování",
+      "tags": [
+        "Udělat",
+        "Dopsat",
+        "Projít si",
+        "Dohodnout",
+        "Zjistit",
+        "uzavřeno"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3s9zw1y9",
+      "name": "Druhy zdrojů",
+      "tags": [
+        "Odkaz",
+        "Dokument",
+        "Předpis",
+        "Nástroj",
+        "Text",
+        "Znalost"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3shpgwao",
+      "name": "Druhy práce",
+      "tags": [
+        "Úkol",
+        "Hotovo",
+        "Uzavřeno"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3ssp2pse",
+      "name": "Oblasti",
+      "tags": []
+    },
+    {
+      "id": "ts_mv6n0q3srfht5c",
+      "name": "Skupiny požadavků",
+      "tags": [
+        "Externí povinné požadavky",
+        "Architektonické požadavky obecné",
+        "Architektonické požadavky na řešení",
+        "Obecné požadavky",
+        "Právní požadavky",
+        "Funkční požadavky",
+        "Technické požadavky",
+        "Požadavky správy dat",
+        "Požadavky architektury řešení",
+        "Požadavky dokumentace",
+        "Požadavky souladu"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3swnwofl",
+      "name": "Druhy podkladů",
+      "tags": [
+        "Předpis",
+        "Dokument",
+        "Odkaz",
+        "Doplnění",
+        "Interní podklad"
+      ]
+    },
+    {
+      "id": "ts_mv6n0q3snctxpv",
+      "name": "Oblasti architektury",
+      "tags": [
+        "Obecná",
+        "Aplikační",
+        "Datová",
+        "Motivační",
+        "Byznysová",
+        "Procesní",
+        "Agendová",
+        "Bezpečnostní",
+        "Technologická",
+        "Infrastrukturní",
+        "Implementační",
+        "Realizační"
+      ]
+    }
+  ],
   "savedViews": [],
   "jsonExports": [],
-  "entities": []
+  "entities": [
+    {
+      "id": "e_mv6n95fvb4q8my",
+      "name": "Aktivní Napsat sem věcné oblasti přístupnosti (Práce)",
+      "typeId": "ty_mv6n0q3twhmtld",
+      "inInbox": false,
+      "aspects": [
+        "asp_mv6n0q3uocf6zu"
+      ],
+      "attributes": {
+        "a_mv6n0q3tqecs3u": [
+          "Úkol"
+        ],
+        "a_mv6n0q3t9h50we": "Asi hlavně tyhle oblasti podle mě\n\n\n\n[[Přístupnost webových stránek]]\n\n[[Přístupnost mobilních aplikací]]\n\n[[Přístupnost aplikací a systémů]]\n\n[[Přístupnost dokumentů]]\n\n[[Přístupnost informací a obsahu]]\n\n[[Přístupnost služeb]]\n\n[[Přístupnost výrobků]]\n\n",
+        "a_mv6n0q3t9lffhv": "Aktivní",
+        "a_mv6n0q3uduj862": [
+          "Michal Rada"
+        ],
+        "a_mv6n0q3u89bvgx": [
+          "Dopsat"
+        ],
+        "a_mv6n0q3uoik382": "Aktivní",
+        "a_mv6nfahejnvpro": "Napsat sem věcné oblasti přístupnosti (Práce)",
+        "a_mv6nkwbxg9euo8": [
+          {
+            "text": "Udělat vůbec entitu Věcná oblast",
+            "hotovo": true
+          },
+          {
+            "text": "Atributy oblasti aspoň základ",
+            "hotovo": false
+          },
+          {
+            "text": "Šablonu nebo ne nebo co",
+            "hotovo": false
+          },
+          {
+            "text": "Zkusit na nějaké té oblasti pak tady",
+            "hotovo": false
+          }
+        ]
+      },
+      "customAttributes": [],
+      "relations": [],
+      "createdAt": "2026-10-13T12:15:17.707Z",
+      "updatedAt": "2026-10-13T12:29:43.987Z"
+    }
+  ]
 }
