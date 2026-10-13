@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "projectName": "",
+  "projectDescription": "",
+  "ghPath": "egdilna/pristupnost/kb-pristupnost.dkmdata",
+  "settings": {
+    "tabs": [
+      {
+        "id": "z_mv6mpclm0b1az1",
+        "kind": "inbox",
+        "name": "",
+        "icon": "",
+        "showCount": true,
+        "hideEmpty": false
+      },
+      {
+        "id": "z_mv6mpclmk612xs",
+        "kind": "all",
+        "name": "",
+        "icon": "",
+        "showCount": true,
+        "hideEmpty": false
+      },
+      {
+        "id": "z_mv6mpclm869fct",
+        "kind": "archive",
+        "name": "",
+        "icon": "",
+        "showCount": true,
+        "hideEmpty": true
+      }
+    ],
+    "modules": []
+  },
+  "entityTypes": [],
+  "aspects": [],
+  "relationTypes": [],
+  "selectLists": [],
+  "tagSets": [],
+  "savedViews": [],
+  "jsonExports": [],
+  "entities": []
+}
