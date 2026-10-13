@@ -1028,6 +1028,30 @@
       "relations": [],
       "createdAt": "2026-10-13T12:15:17.707Z",
       "updatedAt": "2026-10-13T12:29:43.987Z"
+    },
+    {
+      "id": "e_mv6o035du3oico",
+      "name": "Přístupnost webových stránek",
+      "typeId": "t_mv6n5ufqj0x79k",
+      "inInbox": false,
+      "aspects": [
+        "asp_mv6n0q3uocf6zu"
+      ],
+      "attributes": {
+        "a_mv6n6zwouekfac": "Přístupnost jakéhokoliv webu, včetně jeho obsahu",
+        "a_mv6n0q3uduj862": [
+          "Michal Rada"
+        ],
+        "a_mv6n0q3u89bvgx": [
+          "domyslet",
+          "Dopsat"
+        ],
+        "a_mv6n0q3u2niq6q": "Musíme si říct, co vlastně chceme mít v detailu oblasti"
+      },
+      "customAttributes": [],
+      "relations": [],
+      "createdAt": "2026-10-13T12:36:14.449Z",
+      "updatedAt": "2026-10-13T12:37:57.122Z"
     }
   ]
 }
